@@ -1,3 +1,4 @@
+/*
 package com.example.javateam.domain;
 
 import jakarta.persistence.Entity;
@@ -7,7 +8,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(
-        name = "category"
+        name = "reply"
 )
 public class ReplyDao {
     @Id
@@ -17,6 +18,5 @@ public class ReplyDao {
     private int grade;
     private String text;
 
-
-
 }
+*/
