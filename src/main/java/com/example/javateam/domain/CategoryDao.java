@@ -1,3 +1,4 @@
+/*
 package com.example.javateam.domain;
 
 
@@ -7,11 +8,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(
         name = "category"
 )
+@Getter
+@Setter
 public class CategoryDao {
 
     @Id
@@ -24,28 +29,9 @@ public class CategoryDao {
     )
     private String categoryName;
 
+    private int grade;
 
-    public Long getCategoryId() {
-        return this.categoryId;
-    }
+    private String text;
 
-    public String getCategoryName() {
-        return this.categoryName;
-    }
-
-    public void setCategoryId(final Long categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public void setCategoryName(final String categoryName) {
-        this.categoryName = categoryName;
-    }
-
-    public CategoryDao(final Long categoryId, final String categoryName) {
-        this.categoryId = categoryId;
-        this.categoryName = categoryName;
-    }
-
-    public CategoryDao() {
-    }
 }
+*/
