@@ -17,6 +17,23 @@ public class TemplateServiceImpl  implements  TemplateService{
     private final TemplateRepo repo;
 
 
+//    @Override
+//    public Long register(TemplateDto dto) {
+//
+//        log.info("DTO------------------------");
+//        log.info(dto);
+//
+//        TemplateDao entity = dtoToEntity(dto); // 변환
+//
+//        log.info(entity);
+//
+//        repo.save(entity);
+//
+//        return entity.getTemplate_id();
+//
+//    }
+
+
     @Override
     public TemplateDto read(Long tno) {
 
