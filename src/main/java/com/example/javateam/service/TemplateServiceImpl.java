@@ -1,0 +1,28 @@
+package com.example.javateam.service;
+
+import com.example.javateam.domain.TemplateDao;
+import com.example.javateam.dto.TemplateDto;
+import com.example.javateam.repository.TemplateRepo;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+@Log4j2
+@RequiredArgsConstructor
+public class TemplateServiceImpl  implements  TemplateService{
+
+    private final TemplateRepo repo;
+
+
+    @Override
+    public TemplateDto read(Long tno) {
+
+        Optional<TemplateDao> result = repo.findById(tno);
+
+        return result.isPresent() ? entityToDto(result.get()): null;
+    }
+
+}
