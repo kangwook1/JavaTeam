@@ -25,7 +25,7 @@ public class UserService {
         return userDao.getId();
     }
 
-    public Long login(UserLoginReq reqDto){
+   /* public Long login(UserLoginReq reqDto){
 
-    }
+    }*/
 }
