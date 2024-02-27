@@ -1,12 +1,10 @@
 package com.example.javateam.service;
 
 import com.example.javateam.domain.UserDao;
-import com.example.javateam.dto.user.UserLoginReq;
 import com.example.javateam.dto.user.UserSignUpReq;
 import com.example.javateam.repository.UserRepo;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
 @Service

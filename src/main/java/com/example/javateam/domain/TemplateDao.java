@@ -22,7 +22,7 @@ public class TemplateDao extends BaseEntity{
     @Column(length = 50, nullable = false)
     private String title; // 템플릿 제목
 
-    @Column(length = 255, nullable = false)
+    @Column(length = 100, nullable = false)
     private String gcs_path;
 
     @Column(length = 50, nullable = false)
