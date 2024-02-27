@@ -1,4 +1,3 @@
-/*
 package com.example.javateam.domain;
 
 
@@ -29,9 +28,6 @@ public class CategoryDao {
     )
     private String categoryName;
 
-    private int grade;
 
-    private String text;
 
 }
-*/
