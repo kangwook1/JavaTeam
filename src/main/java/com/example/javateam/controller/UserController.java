@@ -24,7 +24,7 @@ public class UserController {
 
     @GetMapping(value = "/signup")
     public String signup(){
-        return "SingUpPage";
+        return "SignUpPage";
     }
 
     @PostMapping(value = "/login")
@@ -33,8 +33,8 @@ public class UserController {
     }
 
     @PostMapping(value = "/signup")
-    public String signup(UserSignUpReq userSignUpReq){
+    public String signup(@ModelAttribute UserSignUpReq userSignUpReq){
         userService.signup(userSignUpReq);
-        return "SingUpSuccess";
+        return "redirect:/";
     }
 }
